@@ -1,0 +1,118 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;}
+
+    a{text-decoration: none;}
+ /*top head section start */
+ header .tophead {
+    
+    background-color: #34313a;
+}
+header .tophead .leftgroup ul li {
+    margin: 0px 20px;
+}
+header .tophead .leftgroup ul li a{
+    color: #fff;
+    font-size: 13px;
+}
+header .tophead .leftgroup ul li a:hover{
+    text-decoration: underline;
+}
+header .tophead .rightgroup ul li {
+    margin: 0px 15px;
+}
+header .tophead .rightgroup ul li a{
+    color: #fff;
+    font-size: 13px;
+}
+header .tophead .leftgroup ul li a.active{
+    width: auto;
+    height:auto ;
+    color: #b00000;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    position: relative;
+    background: #fff;
+    display: inline-block;
+}
+header .tophead .leftgroup ul li a.active:hover{
+    text-decoration: none;
+}
+header .tophead .leftgroup ul li a.active::before{
+    content: "";
+    top: 0px;
+    width: 0%;
+    height: 0px;
+    right: 100%;
+    position: absolute;
+    border-right: 15px solid #fff;
+    border-bottom: 
+    0px solid #fff;
+    border-top: 28px solid transparent;
+}
+
+   /*carousel start 20may*/                      
+.carousel-inner .carousel-item{
+    height: 500px;
+}
+@keyframes zoomin{
+    from{
+           transform: scale(1);
+    } 
+    to{
+        transform: scale(1.3);
+    }
+}
+.carousel-inner .carousel-item img{
+    animation: zoomin 20s infinite;
+}
+
+.carousel-dark .carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.carousel-inner .carousel-item .carousel-caption{
+    bottom: 6rem;
+}
+.carousel-indicators{
+    bottom: 3rem;
+}
+ /*carousel end 20may*/  
+
+  /*international start 21may2023*/ 
+  .interbox{
+    width: 100%;
+    min-height: 200px;
+    margin-top: -50px;
+    z-index: 9;
+    background: #fff;
+  }
+    
+
+
+
+
+
+
+
+/*media query section start*/
+@media only screen and (max-width:1023px) { 
+    header .tophead {
+        display: none;
+    }
+    .navbar-expend-lg .navbar-nav .nav-link {font-size: 13px !important;
+
+    }
+    @mwdia only screen and (min: width 768px;){
+        .carousel-inner .carousel-item .carousel-caption{
+            bottom: 9.5 rem !important;
+        }
+        .carousel-indicators{
+            bottom: 9 rem !important;
+        }
+    }
+}
